@@ -1,0 +1,247 @@
+// Custom bootstrap variable overrides
+@import "bootstrap_variable_overrides";
+
+// Bootstrap and its default variables
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Your style
+@import "variables";
+@import "mixins";
+@import "general";
+@import "layout";
+@import "module";
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css";
+
+/* CUSTOM STYLES
+-------------------------------------------------- */
+//Smooth Scroll
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  transition: all 0.3s ease-in-out;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+
+  .custom-maxwidth-lg{
+    max-width: 847px;
+    @media (min-width: 768px){
+      margin-top: -2.8rem;
+    }
+    @media (max-width: 767px){
+      .shadow{
+        box-shadow: none !important;
+
+        a{
+          box-shadow: var(--bs-box-shadow) !important;
+          border-radius: var(--bs-border-radius-xxl) !important
+        }
+      }
+    }
+  }
+
+  .banner-cta-btns{
+    .banner-cta-btn{
+      &:first-of-type{
+        border-right: 2px solid $darkgrey;
+
+        @media (max-width: 767px){
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  header{
+    .social-icons{
+      a{
+        font-size: 1.2rem;
+      }
+    }
+
+    .navbar.navbar-expand-md{
+      .navbar-brand{
+        @media (max-width: 767px){
+          max-width: 200px;
+        }
+      }
+      #navbarCollapse{
+        @media (max-width: 767px){
+          opacity: 0;
+
+          &.show{
+            opacity: 1;
+          }
+
+          &.collapsing{
+            opacity: 0;
+          }
+        }
+      }
+      ul.navbar-nav{
+        li{
+          text-align: center;
+        }
+
+        @media (max-width: 767px){
+          margin-top: 1rem;
+          margin-bottom: 0 !important;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: $lightblue;
+
+          li{
+            font-weight: 700;
+            font-size: 1rem;
+
+            &:hover,
+            &.selected{
+              background-color: $orange;
+            }
+
+            a{
+              color: $white;
+            }
+          }
+        }
+
+        @media (min-width: 768px){
+          margin-top: 0rem;
+          li{
+            border-right: 2px solid $darkgrey;
+            line-height: 0.8rem;
+            font-size: 1rem;
+  
+            &:last-child{
+              border-right: none;
+  
+              a{
+                padding-right: 0;
+              }
+            }
+  
+            a{
+              padding:0 0.8rem;
+            }
+  
+            &.selected{
+              a{
+                color: $lightblue;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .banner-cta-btns{
+    a{
+      font-size: 1.4rem;
+      
+      @media (max-width: 767px){
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .social-icons{
+    a{
+      font-size: 1.5rem;
+    }
+  }
+
+  .company-address{
+    p{
+      font-size: 1.3rem;
+
+      @media (max-width: 991px){
+        span{
+          display: none;
+        }
+        a{
+          display: block;
+        }
+      }
+
+      @media (max-width: 767px){
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .footer-nav{
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li{
+        padding: 0 0.5rem;
+        border-right: 2px solid $white;
+        font-size: 1.3rem;
+        line-height: 1rem;
+
+        &:last-child{
+          border-right: none;
+        }
+
+        &.selected{
+          a{
+            color: $black;
+          }
+        }
+
+        &:nth-child(even){
+          @media (max-width: 991px){
+            border-right: none !important;
+          }
+        }
+
+        @media (max-width: 991px){
+          border-right: none;
+        }
+
+        @media (max-width: 767px){
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .copyright-text{
+    p{
+      font-size: 1.3rem;
+
+      @media (max-width: 767px){
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .cta-card{
+    .card{
+      .card-body{
+        h5{
+          font-size: 2.5rem;
+
+          @media (max-width: 767px){
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
