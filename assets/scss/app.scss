@@ -29,18 +29,23 @@ body {
   padding: 0;
   margin: 0;
 
-  .custom-maxwidth-lg{
-    max-width: 847px;
-    @media (min-width: 768px){
-      margin-top: -2.8rem;
-    }
-    @media (max-width: 767px){
-      .shadow{
-        box-shadow: none !important;
+  #banner-cta{
+    .custom-maxwidth-lg{
+      max-width: 847px;
+      @media (min-width: 768px){
+        margin-top: -2.8rem;
+      }
+      @media (max-width: 767px){
+        margin-top: -4rem;
 
-        a{
-          box-shadow: var(--bs-box-shadow) !important;
-          border-radius: var(--bs-border-radius-xxl) !important
+        .shadow{
+          box-shadow: none !important;
+  
+          a{
+            box-shadow: var(--bs-box-shadow) !important;
+            border-radius: var(--bs-border-radius-xxl) !important;
+            background-color: $white;
+          }
         }
       }
     }
@@ -90,6 +95,7 @@ body {
         }
 
         @media (max-width: 767px){
+          display: none !important;
           margin-top: 1rem;
           margin-bottom: 0 !important;
           position: absolute;
@@ -149,7 +155,7 @@ body {
       font-size: 1.4rem;
       
       @media (max-width: 767px){
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -184,6 +190,12 @@ body {
       list-style-type: none;
       margin: 0;
       padding: 0;
+
+      @media (max-width: 991px){
+        justify-content: center;
+        max-width: 400px;
+        margin: 0 auto;
+      }
 
       li{
         padding: 0 0.5rem;
@@ -235,9 +247,60 @@ body {
           font-size: 2.5rem;
 
           @media (max-width: 767px){
-            font-size: 1.5rem;
+            font-size: 2rem;
           }
         }
+      }
+    }
+  }
+
+  .custom-sm-max-width{
+    @media (max-width: 767px){
+      max-width: 372px !important;
+    }
+  }
+
+  .mobile-menu-container{
+    top:-100%;
+    opacity: 0;
+
+    &.show{
+      top: 0;
+      opacity: 1;
+    }
+
+    .mob-menu-close{
+      font-size: 1.5rem;
+    }
+
+    ul.mob-menu{
+      list-style-type: none;
+
+      li{
+        font-size: 1.3rem;
+
+        .d-block{
+          max-width: 352px;
+          border-radius: 20px;
+          padding: 0.5rem 0;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+
+        &.active{
+          a{
+            color: $black;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .phone-num{
+      font-size: 1.2rem;
+      font-weight: 700; 
+
+      i{
+        font-size: 1rem;
       }
     }
   }

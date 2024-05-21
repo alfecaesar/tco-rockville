@@ -16,8 +16,59 @@
 </head>
 
 <body>
-<header class="pt-2 pb-2 pb-lg-3 position-relative z-3">
-    <div class="social-icons">
+
+<div class="mobile-menu-container position-absolute w-100 bg-lightblue z-3 d-block d-md-none">
+    <div class="container-xxl">
+        <div class="row py-3">
+            <div class="col d-flex justify-content-end">
+                <button class="mob-menu-close bg-transparent border-0 text-color-white">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul class="px-0 py-0 mx-0 my-0 mob-menu">
+                    <li class="text-center active"><a href="#" class="text-color-white text-decoration-none hover-black text-uppercase">Home</a></li>
+                    <li class="text-center"><a href="#" class="text-color-white text-decoration-none hover-black text-uppercase">About</a></li>
+                    <li class="text-center"><a href="#" class="text-color-white text-decoration-none hover-black text-uppercase">Ministries</a></li>
+                    <li class="text-center"><a href="#" class="text-color-white text-decoration-none hover-black text-uppercase">Calendar</a></li>
+                    <li class="text-center"><a href="#" class="text-color-white text-decoration-none hover-black text-uppercase">Contact Us</a></li>
+                    <li class="text-center pt-3"><a href="#" class="text-color-black text-decoration-none bg-white text-uppercase d-block mx-auto">Watch Us Live</a></li>
+                    <li class="text-center pt-1"><a href="#" class="text-color-black text-decoration-none bg-white text-uppercase d-block mx-auto">Giving</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="social-icons pt-3">
+                    <div class="container-xxl d-flex justify-content-center mb-1">
+                        <a href="#" class="text-decoration-none text-color-white mx-2">
+                            <i class="fa-brands fa-square-x-twitter"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text-color-white mx-2">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text-color-white mx-2">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none text-color-white mx-2">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center pb-4">
+                <a href="#" class="text-decoration-none text-color-white hover-black phone-num"><i class="fa-solid fa-phone"></i> (123) 456-7890</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header class="pt-2 pb-2 pb-lg-3 position-relative z-2">
+    <div class="social-icons d-none d-md-block">
         <div class="container-xxl d-flex justify-content-lg-end justify-content-center mb-2 mb-lg-0">
             <a href="#" class="text-decoration-none text-color-darkgrey me-3 hover-lightblue">
                 <i class="fa-brands fa-square-x-twitter"></i>
@@ -75,7 +126,8 @@
             <div class="row">
                 <div class="col-md-12 mx-0 px-0">
                     <div class="banner-content">
-                        <img src="assets/img/banner-img.png" class="img-fluid" alt="Banner Image">
+                        <img src="assets/img/banner-img.png" class="w-100 d-none d-none d-md-block" alt="Banner Image">
+                        <img src="assets/img/banner-img-mobile.png" class="w-100 d-block d-md-none" alt="Banner Image">
                     </div>
                 </div>
             </div>
@@ -83,7 +135,7 @@
     </div>
 
     <div id="banner-cta" class="z-3 position-relative">
-        <div class="container-lg custom-maxwidth-lg pt-2 pt-md-0">
+        <div class="container-lg custom-maxwidth-lg pt-2 pt-md-0 custom-sm-max-width">
             <div class="row rounded-5 shadow py-2 banner-cta-btns bg-white bg-transparent-mobile">
                 <div class="col-12 col-md-6 text-center roboto-black text-uppercase banner-cta-btn">
                     <a href="#" class="d-block text-decoration-none text-color-darkgrey py-2 py-md-0 mb-3 mb-md-0">Watch Us Live <span class="text-color-orange"><i class="fa-solid fa-circle-play"></i></span></a>
@@ -96,7 +148,7 @@
     </div>
 
     <div id="content-area">
-        <div class="container-xxl py-3 pt-lg-4 pb-lg-5">
+        <div class="container-xxl py-3 pt-lg-4 pb-lg-5 custom-sm-max-width">
             <div class="row">
                 <div class="col-md-12">
                     <div class="content">
