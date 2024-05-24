@@ -122,6 +122,7 @@ gulp.task('dev', function browserDev(done) {
 gulp.task("build", gulp.series(gulp.parallel('css:minify', 'js:minify', 'vendor'), 'vendor:build', function copyAssets() {
   return gulp.src([
     '*.html',
+    'includes/*.html',
     "assets/img/**"
   ], { base: './'})
     .pipe(gulp.dest('dist'));
