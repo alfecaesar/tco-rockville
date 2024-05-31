@@ -190,16 +190,15 @@ body {
       list-style-type: none;
       margin: 0;
       padding: 0;
-
-      @media (max-width: 991px){
-        justify-content: center;
-      }
+      justify-content: center; 
 
       li{
-        padding: 0 0.5rem;
+        padding: 0 1.5rem;
         border-right: 2px solid $white;
         font-size: 1.3rem;
         line-height: 1rem;
+        width: auto !important;
+        
 
         &:last-child{
           border-right: none;
@@ -213,6 +212,7 @@ body {
 
         @media (max-width: 991px){
           width: auto !important;
+          padding: 0 0.5rem;
         }
 
         @media (max-width: 767px){
