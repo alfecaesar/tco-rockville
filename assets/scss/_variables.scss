@@ -7,7 +7,8 @@ $orange: #ff9c00;
 $darkgrey: #363535;
 $magenta: #ea344e;
 
-.bg-lightblue {
+.bg-lightblue,
+.bg-hover-lightblue:hover {
     background-color: $lightblue;
 }
 

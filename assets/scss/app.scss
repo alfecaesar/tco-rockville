@@ -32,6 +32,17 @@ body {
   #banner-cta{
     .custom-maxwidth-lg{
       max-width: 847px;
+
+      .shadow{
+        a{
+          &:hover{
+            span{
+              color: $orange !important;
+            }  
+          }
+        }
+      }
+
       @media (min-width: 768px){
         margin-top: -2.8rem;
       }
