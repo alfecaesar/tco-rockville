@@ -29,6 +29,17 @@ body {
   padding: 0;
   margin: 0;
 
+  &:not(.home){
+    #content-area{
+      .container-xxl{
+        @media (max-width: 767px){
+          padding-left: 25px;
+          padding-right: 25px;
+        }
+      }
+    }
+  }
+
   #banner-cta{
     .custom-maxwidth-lg{
       max-width: 847px;
